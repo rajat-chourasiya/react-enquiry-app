@@ -14,6 +14,7 @@ This is a dynamic Contact Enquiry form built with **React**, allowing users to s
 ✅ Add user enquiries (Name, Email, Phone, Message)  
 🚫 Prevent duplicate Email or Phone numbers  
 ✏️ Update existing entries  
+✅ Data Stored in Array
 ❌ Delete entries from the table  
 📋 Live table rendering with dynamic state management  
 🎯 Built using React functional components and **Hooks (`useState`)**  
