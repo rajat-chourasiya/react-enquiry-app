@@ -1,4 +1,4 @@
-# 📝 React Contact Enquiry App
+# 📝 React Contact Enquiry App (CURD Operation)
 
 ## 🖼️ Screenshot
 Here is a preview of the Contact Enquiry App:
