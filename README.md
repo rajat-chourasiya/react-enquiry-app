@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 📝 React Contact Enquiry App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🖼️ Screenshot
+Here is a preview of the Contact Enquiry App:
+![Screenshot form](https://github.com/user-attachments/assets/3ab3b4bf-f724-4f7c-9e82-7e548b21d7fb)
 
-## Available Scripts
+This is a dynamic Contact Enquiry form built with **React**, allowing users to submit, update, and delete contact information. The form includes fields like Name, Email, Phone, and Message. Duplicate Email and Phone numbers are restricted using validation logic. A live data table displays all submissions and supports inline editing.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+✅ Add user enquiries (Name, Email, Phone, Message)  
+🚫 Prevent duplicate Email or Phone numbers  
+✏️ Update existing entries  
+❌ Delete entries from the table  
+📋 Live table rendering with dynamic state management  
+🎯 Built using React functional components and **Hooks (`useState`)**  
+🔔 Toast notifications for actions like delete or duplicate alerts (`react-toastify`)  
+🎨 Styled with Bootstrap components  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+├── App.css
+├── App.js
+├── index.js
+├── logo.svg
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧠 How It Works
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. `App.js`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Maintains two main states:  
+  - `formData` (for the input form)  
+  - `userData` (list of submitted users)
+- Includes form logic for:
+  - Creating a new record
+  - Editing an existing one
+  - Validation against duplicate Email/Phone
+- Uses `react-toastify` for user-friendly notifications
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Data Table
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Displays all form submissions
+- Provides inline **Update** and **Delete** buttons
+- Reactively updates on any form interaction
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💻 Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ✅ To Run Locally
 
-### Code Splitting
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rajat-chourasiya/react-enquiry-app.git
+   cd react-enquiry-app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install dependencies: 
+        npm install
 
-### Analyzing the Bundle Size
+3.  Start the development server: 
+        npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app will run on http://localhost:3000
 
-### Making a Progressive Web App
+📌 Notes
+Duplicate email or phone entries will trigger a toast error.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clicking Update loads the user’s data into the form for editing.
 
-### Advanced Configuration
+All updates reflect instantly in the UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Notifications require react-toastify — ensure it's installed:
 
-### Deployment
+🛠️ Dependencies
+React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+React Bootstrap
 
-### `npm run build` fails to minify
+React Toastify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
